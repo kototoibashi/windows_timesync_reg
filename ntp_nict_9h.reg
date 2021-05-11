@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+ 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters]
+"NtpServer"="ntp.nict.jp,0x9"
+"Type"="NTP"
+ 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DateTime\Servers]
+"1"="ntp.jst.mfeed.ad.jp"
+ 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config]
+"EventLogFlags"=dword:00000001
+"UpdateInterval"=dword:00000800
+"MaxAllowedPhaseOffset"=dword:00000010
+"PhaseCorrectRate"=dword:00000001
+ 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient]
+"SpecialPollInterval"=dword:00008000
+"EventLogFlags"=dword:00000002
